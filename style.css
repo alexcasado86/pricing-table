@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F8FAFC;
+  font-size: 1.6rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#cards {
+  display: flex;
+  gap: 3.2rem;
+  width: 121.6rem;
+  height: 45.4rem;
+}
+
+#cards .card {
+  padding: 4.8rem 3.2rem 3.2rem;
+  width: 38.4rem;
+  height: 45.4rem;
+  background-color: white;
+  border: 0.1rem solid #E2E8F0;
+  border-radius: 1rem;
+}
+
+#cards .card:nth-child(2) {
+  background-color: #0F172A;
+}
+
+#cards .card .content1 {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 32rem;
+  height: 29.4rem;
+}
+
+#cards .card .content2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 32rem;
+  height: 37.4rem;
+  position: relative;
+}
+
+#cards .card .content3 {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 32rem;
+  height: 27.8rem;
+}
+
+#cards .card .content1 .prices,
+#cards .card .content2 .prices,
+#cards .card .content3 .prices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 32rem;
+  height: 7.8rem;
+}
+
+#cards .card .content1 .prices .prices-type,
+#cards .card .content2 .prices .prices-type,
+#cards .card .content3 .prices .prices-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cards .card .content2 .prices .prices-type .white {
+  color: #F8FAFC;
+}
+
+#cards .card .content1 .prices .prices-type h2,
+#cards .card .content2 .prices .prices-type h2,
+#cards .card .content3 .prices .prices-type h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.9rem;
+  color: #1E293B;
+}
+
+#cards .card .content1 .prices .prices-type h3,
+#cards .card .content2 .prices .prices-type h3,
+#cards .card .content3 .prices .prices-type h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #1E293B;
+} 
+
+#cards .card .content1 .prices .prices-type h3 strong,
+#cards .card .content2 .prices .prices-type h3 strong {
+  font-size: 2.4rem;
+}
+
+#cards .card .content1 .prices span,
+#cards .card .content2 .prices span,
+#cards .card .content3 .prices span {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7C3AED;
+}
+
+#cards .card .content1 button,
+#cards .card .content2 button,
+#cards .card .content3 button {
+  width: 32rem;
+  height: 5.6rem;
+  padding: 1.6rem 2.4rem;
+  border: 0.1rem solid #1E293B;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  background-color: transparent;
+  color: #1E293B;
+  cursor: pointer;
+}
+
+#cards .card .content1 button:hover,
+#cards .card .content3 button:hover {
+  background-color: #1E293B;
+  color: white;
+}
+
+#cards .card .content2 .button {
+  background-color: #996DFF;
+  color: white;
+  padding: 1.6rem 2.4rem;
+}
+
+#cards .card .content2 .button:hover {
+  background-color: white;
+  color: #996DFF;
+}
+
+#cards .card .content1 .benefits,
+#cards .card .content2 .benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#cards .card .content1 .benefits .description,
+#cards .card .content2 .benefits .description,
+#cards .card .content3 .benefits .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cards .card .content1 .benefits .description .description1,
+#cards .card .content1 .benefits .description .description2,
+#cards .card .content2 .benefits .description .description1,
+#cards .card .content2 .benefits .description .description2,
+#cards .card .content2 .benefits .description .description3,
+#cards .card .content2 .benefits .description .description4,
+#cards .card .content3 .benefits .description .description1 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#cards .card .content1 .benefits .description .description1 span,
+#cards .card .content1 .benefits .description .description2 span,
+#cards .card .content2 .benefits .description .description1 span,
+#cards .card .content2 .benefits .description .description2 span,
+#cards .card .content2 .benefits .description .description3 span,
+#cards .card .content2 .benefits .description .description4 span,
+#cards .card .content3 .benefits .description .description1 span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.06em;
+  color: #475569;
+}
+
+#cards .card .content2 .benefits .description .description1 span,
+#cards .card .content2 .benefits .description .description2 span,
+#cards .card .content2 .benefits .description .description3 span,
+#cards .card .content2 .benefits .description .description4 span {
+  color: #CBD5E1;
+}
+
+#cards .card .content2 .tag {
+  padding: 0.8rem 1.6rem;
+  position: absolute;
+  width: 13.4rem;
+  height: 3.4rem;
+  left: calc(50% - 133px/2 - 0.5px);
+  top: -65px;
+  background-color: #FBA94C;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0F172A;
+}
